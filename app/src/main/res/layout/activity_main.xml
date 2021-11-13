@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff00">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:hint="Enter Your name"
+        android:textSize="18sp"
+        android:padding="20dp"/>
+
+
+    <TextView
+        android:id="@+id/txtQuestion1"
+        android:layout_below="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Programming Language you know "
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/cbx1"
+        android:layout_below="@+id/txtQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cbx2"
+        android:layout_below="@+id/cbx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C++"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cbx3"
+        android:layout_below="@+id/cbx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JAVA"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cbx4"
+        android:layout_below="@+id/cbx3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PYTHON"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:layout_below="@id/cbx4"
+        android:id="@+id/txtQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Phone you have"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <RadioGroup
+        android:layout_below="@+id/txtQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOKIA"
+            android:textSize="18sp"
+            android:id="@+id/radio1"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAMSUMG"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APPLE"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTHER"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="#ff0000"
+        android:text="Submit"
+        android:textSize="18sp"/>
+
+
+
+
+</RelativeLayout>
